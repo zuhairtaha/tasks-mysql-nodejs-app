@@ -1,0 +1,58 @@
+<%
+const tasksList = [
+    {
+        task: "Find out how many tasks are in the task table",
+        body: "Lorem ipsum dolor sit amet"
+    },
+    {
+        task: "Find out how many tasks in the task table do not have a valid due date",
+        body: "Lorem ipsum dolor sit amet"
+    },
+    {
+        task: "Find all the tasks that are marked as done",
+        body: "Lorem ipsum dolor sit amet"
+    },
+    {
+        task: "Find all the tasks that are not marked as done",
+        body: "Lorem ipsum dolor sit amet"
+    },
+    {
+        task: "Get all the tasks, sorted with the most recently created first",
+        body: "Lorem ipsum dolor sit amet"
+    },
+    {
+        task: "Get the single most recently created task",
+        body: "Lorem ipsum dolor sit amet"
+    },
+    {
+        task: "Get the title and due date of all tasks where the title or description contains database",
+        body: "Lorem ipsum dolor sit amet"
+    },
+    {
+        task: "Get the title and status (as text) of all tasks",
+        body: "Lorem ipsum dolor sit amet"
+    },
+    {
+        task: "Get the name of each status, along with a count of how many tasks have that status",
+        body: "Lorem ipsum dolor sit amet"
+    },
+    {
+        task: "Get the names of all statuses, sorted by the status with most tasks first",
+        body: "Lorem ipsum dolor sit amet"
+    }
+]
+%>
+<ul id="hwTasksList" class="collapsible">
+
+    <% tasksList.forEach((task, index)=>{ %>
+    <li class="taskItem" id="<%= index + 1 %>">
+        <div class="collapsible-header">
+            <i class="material-icons">keyboard_arrow_right</i>
+            <%= index + 1 + '. ' + task.task %>
+        </div>
+        <div class="collapsible-body">
+            <span><%= task.body %></span>
+        </div>
+    </li>
+    <% }) %>
+</ul>
