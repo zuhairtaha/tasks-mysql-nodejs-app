@@ -50,6 +50,10 @@ class Task {
             .then(data => res.send(data))
     }
 
+    static initDB(req, res) {
+        task.initDB()
+    }
+
 }
 
 module.exports = {TaskController: Task}

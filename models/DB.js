@@ -1,9 +1,17 @@
 const mysql = require("mysql")
+/*
+ const db = mysql.createConnection({
+ host: 'localhost',
+ user: 'root',
+ password: '',
+ database: 'hyf-1'
+ })
+ */
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'hyf-1'
+    host: 'us-cdbr-iron-east-01.cleardb.net',
+    user: 'bb4df4b37199a0',
+    password: '6d5f3bfa',
+    database: 'heroku_37b75dd635d896f'
 })
 
 // connect

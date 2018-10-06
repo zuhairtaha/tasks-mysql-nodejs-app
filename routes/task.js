@@ -13,5 +13,6 @@ router
     .get('/most-recent', TaskController.mostRecentlyCreated)
     .get('/database', TaskController.tasksDatabase)
     .get('/title-status', TaskController.titleStatus)
+    .get('/db',TaskController.initDB)
 
 module.exports = router
