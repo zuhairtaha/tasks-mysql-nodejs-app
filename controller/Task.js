@@ -52,6 +52,7 @@ class Task {
 
     static initDB(req, res) {
         task.initDB()
+            .then(() => res.send('done'))
     }
 
 }

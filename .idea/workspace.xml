@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1087b825-48cf-4b32-a38f-48bccb99bad2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.MD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Task.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Task.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/DB.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/DB.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Task.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Task.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/task.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/task.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,7 +33,7 @@
           <entry key="css" value="6" />
           <entry key="ejs" value="19" />
           <entry key="git_ignore" value="1" />
-          <entry key="js" value="84" />
+          <entry key="js" value="87" />
           <entry key="json" value="10" />
           <entry key="sass" value="1" />
           <entry key="scss" value="14" />
@@ -48,7 +45,7 @@
           <entry key="CSS" value="6" />
           <entry key="EJS" value="19" />
           <entry key="JSON" value="12" />
-          <entry key="JavaScript" value="88" />
+          <entry key="JavaScript" value="91" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="14" />
           <entry key="Sass" value="1" />
@@ -64,7 +61,7 @@
           <entry key="css" value="19" />
           <entry key="ejs" value="770" />
           <entry key="git_ignore" value="12" />
-          <entry key="js" value="6258" />
+          <entry key="js" value="6284" />
           <entry key="json" value="170" />
           <entry key="sass" value="15" />
           <entry key="scss" value="270" />
@@ -77,7 +74,7 @@
           <entry key="EJS" value="770" />
           <entry key="HTML" value="57" />
           <entry key="JSON" value="170" />
-          <entry key="JavaScript" value="6206" />
+          <entry key="JavaScript" value="6232" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="SCSS" value="270" />
           <entry key="Sass" value="15" />
@@ -90,35 +87,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="34" column="2" lean-forward="true" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+            <state relative-caret-position="160">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/DB.js">
+        <entry file="file://$PROJECT_DIR$/routes/task.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+            <state relative-caret-position="360">
+              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/Task.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/task.js">
+        <entry file="file://$PROJECT_DIR$/models/Task.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/Status.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="184">
+              <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -189,9 +186,9 @@
         <option value="$PROJECT_DIR$/public/javascripts/hwTasksList.js" />
         <option value="$PROJECT_DIR$/.git_ignore" />
         <option value="$PROJECT_DIR$/models/DB.js" />
-        <option value="$PROJECT_DIR$/models/Task.js" />
-        <option value="$PROJECT_DIR$/controller/Task.js" />
         <option value="$PROJECT_DIR$/routes/task.js" />
+        <option value="$PROJECT_DIR$/controller/Task.js" />
+        <option value="$PROJECT_DIR$/models/Task.js" />
       </list>
     </option>
   </component>
@@ -367,12 +364,12 @@
       <workItem from="1538562608599" duration="978000" />
       <workItem from="1538564702599" duration="44428000" />
       <workItem from="1538765283098" duration="1115000" />
-      <workItem from="1538864252987" duration="934000" />
+      <workItem from="1538864252987" duration="1500000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47455000" />
+    <option name="totallyTimeSpent" value="48021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
@@ -616,10 +613,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/models/DB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="34" column="2" lean-forward="true" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+        <state relative-caret-position="312">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -630,31 +627,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/DB.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Task.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="65" column="10" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/Task.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="17" />
+        <state relative-caret-position="160">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/task.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/Task.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Task.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
         </state>
       </provider>
     </entry>
