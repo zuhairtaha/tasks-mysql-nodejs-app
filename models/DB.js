@@ -11,7 +11,7 @@ const connectionObj2 = {
     password: '6d5f3bfa',
     database: 'heroku_37b75dd635d896f'
 }
-const db = mysql.createConnection(connectionObj)
+const db = mysql.createConnection(connectionObj2)
 
 // connect
 db.connect(error => {
