@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "description": "Demo for MySQL with Express",
-  "main": "./bin/www",
   "author": "Zuhair Taha",
   "license": "MIT",
   "scripts": {
