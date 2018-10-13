@@ -4,14 +4,17 @@ const {TaskController} = require('../controller/Task')
 
 /* GET home page. */
 router
-    .get('/', TaskController.index)
-    .get('/count', TaskController.count)
-    .get('/countNoValidDueDate', TaskController.countNoValidDueDate)
-    .get('/done', TaskController.doneTasks)
-    .get('/not-done', TaskController.notDoneTasks)
-    .get('/recent', TaskController.recentlyCreated)
-    .get('/most-recent', TaskController.mostRecentlyCreated)
-    .get('/database', TaskController.tasksDatabase)
-    .get('/title-status', TaskController.titleStatus)
+    .get('/api/', TaskController.index)
+    .get('/api/count', TaskController.count)
+    .get('/api/countNoValidDueDate', TaskController.countNoValidDueDate)
+    .get('/api/done', TaskController.doneTasks)
+    .get('/api/not-done', TaskController.notDoneTasks)
+    .get('/api/recent', TaskController.recentlyCreated)
+    .get('/api/most-recent', TaskController.mostRecentlyCreated)
+    .get('/api/database', TaskController.tasksDatabase)
+    .get('/api/title-status', TaskController.titleStatus)
+    .get('/api/tasks-status-users', TaskController.tasksWithStatusAndUsers)
+    .post('/api/add-task', TaskController.addNewTask)
+    .patch('/api/:id', TaskController.updateTask)
 
 module.exports = router

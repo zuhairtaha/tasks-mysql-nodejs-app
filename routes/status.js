@@ -4,8 +4,8 @@ const {StatusController} = require('../controller/Status')
 
 /* GET home page. */
 router
-    .get('/', StatusController.index)
-    .get('/tasks-count',StatusController.nameTasksCount)
-    .get('/tasks-count-desc',StatusController.nameTasksCountDesc)
+    .get('/api/', StatusController.index)
+    .get('/api/tasks-count',StatusController.nameTasksCount)
+    .get('/api/tasks-count-desc',StatusController.nameTasksCountDesc)
 
 module.exports = router

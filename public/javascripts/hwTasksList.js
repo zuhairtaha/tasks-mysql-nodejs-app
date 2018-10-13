@@ -6,16 +6,16 @@ export function getTasksData() {
             <div class="indeterminate"></div>
          </div>`
     const IDsUrls = [
-        {id: 1, url: '/task/count'},
-        {id: 2, url: 'task/countNoValidDueDate'},
-        {id: 3, url: 'task/done'},
-        {id: 4, url: 'task/not-done'},
-        {id: 5, url: 'task/recent'},
-        {id: 6, url: 'task/most-recent'},
-        {id: 7, url: 'task/database'},
-        {id: 8, url: 'task/title-status'},
-        {id: 9, url: 'status/tasks-count'},
-        {id: 10, url: 'status/tasks-count-desc'}
+        {id: 1, url: 'task/api/count'},
+        {id: 2, url: 'task/api/countNoValidDueDate'},
+        {id: 3, url: 'task/api/done'},
+        {id: 4, url: 'task/api/not-done'},
+        {id: 5, url: 'task/api/recent'},
+        {id: 6, url: 'task/api/most-recent'},
+        {id: 7, url: 'task/api/database'},
+        {id: 8, url: 'task/api/title-status'},
+        {id: 9, url: 'status/api/tasks-count'},
+        {id: 10, url: 'status/api/tasks-count-desc'}
     ]
 
     const fetchUrl = IDsUrls.find(idUrl => idUrl.id === id)
@@ -25,7 +25,7 @@ export function getTasksData() {
 
 }
 
-function fetchTasksJSONData(url) {
+export function fetchTasksJSONData(url) {
     return new Promise((resolve, reject) => {
         fetch(url)
             .then(data => data.json())
@@ -34,7 +34,7 @@ function fetchTasksJSONData(url) {
     })
 }
 
-function renderResults(obj) {
+export function renderResults(obj) {
     const keys = Object.keys(obj[0])
     // number of th = key length
     let table = ` <table><thead><tr>`

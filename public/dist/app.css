@@ -12902,4 +12902,37 @@ body {
 .capitalize {
   text-transform: capitalize; }
 
+.m0 {
+  margin: 0; }
+  .m0 i {
+    vertical-align: middle; }
+
+.timeFont {
+  font-family: "Segoe UI Light", serif;
+  font-weight: lighter; }
+
+.tasks-container {
+  margin-top: 0;
+  padding-top: 3em;
+  position: relative; }
+  .tasks-container #add-task-btn {
+    position: absolute;
+    top: -1.9em;
+    right: 1.5em; }
+
+#tasks-list .task-row:not(:last-child) {
+  border-bottom: solid 1px #eeeeee; }
+
+.h250 {
+  height: 250px;
+  padding-top: 0.5em; }
+
+.f100 {
+  font-weight: 100; }
+
+.modal {
+  overflow: initial; }
+  .modal #add-task-modal.modal-content {
+    display: contents; }
+
 /*# sourceMappingURL=app.css.map */

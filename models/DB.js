@@ -1,17 +1,17 @@
 const mysql = require("mysql")
-const connectionObj = {
+const localDB = {
     host: 'localhost',
     user: 'root',
     password: '',
     database: 'hyf-1'
 }
-const connectionObj2 = {
+const onlineDB = {
     host: 'us-cdbr-iron-east-01.cleardb.net',
     user: 'bb4df4b37199a0',
     password: '6d5f3bfa',
     database: 'heroku_37b75dd635d896f'
 }
-const db = mysql.createConnection(connectionObj2)
+const db = mysql.createConnection(localDB)
 
 // connect
 db.connect(error => {
@@ -77,12 +77,27 @@ class DB {
         // GET	/table/create	create	table.create
     }
 
-    store() {
+
+    store(obj) {
         // POST	/table	store	table.store
+        return new Promise((resolve, reject) => {
+            if (!this.fields.includes(...Object.keys(obj)))
+                reject("object is not valid")
+            db.query('INSERT INTO ?? SET ?', [this.table, obj], (error, result) => {
+                if (error) reject(error)
+                resolve(result)
+            })
+        })
     }
 
-    show(id) {
+    getRow(id) {
         // GET	/table/{id}	show	table.show
+        return new Promise((resolve, reject) => {
+            db.query('SELECT * FROM?? WHERE id = ?', [this.table, id], (error, result) => {
+                if (error) reject(error)
+                resolve(result)
+            })
+        })
     }
 
     edit(id) {
@@ -99,4 +114,4 @@ class DB {
 }
 
 // --------------------------
-module.exports = {DB}
+module.exports = {DB,db}

@@ -3,6 +3,6 @@ const router = express.Router()
 const {UserController} = require('../controller/User')
 
 /* GET home page. */
-router.get('/', UserController.index)
+router.get('/api/', UserController.index)
 
 module.exports = router

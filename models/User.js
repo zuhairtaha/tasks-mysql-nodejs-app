@@ -9,6 +9,9 @@ class User extends DB {
         return super.index()
     }
 
+    names() {
+        return super.query(`SELECT id, name FROM user`)
+    }
 }
 
 module.exports = {UserModel: User}

@@ -1,0 +1,40 @@
+<!--edit due date modal-->
+<div id="editDueDateModal" class="modal">
+    <div class="modal-content">
+        <h4>Edit Due Date:</h4>
+        <p id="title-dueDate"></p>
+        <!--date-->
+        <div class="input-field col s6">
+            <i class="material-icons prefix">date_range</i>
+            <input id="dateEdit" type="text" class="datepicker">
+            <label for="dateEdit">Date</label>
+        </div>
+
+        <!--time-->
+        <div class="input-field col s6">
+            <i class="material-icons prefix">access_alarm</i>
+            <input id="timeEdit" type="tel" class="timepicker">
+            <label for="timeEdit">Time</label>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <a href="#" id="updateTaskDueDate" class="waves-effect waves-green btn blue">Save</a>
+    </div>
+</div>
+
+
+<!--Edit title modal-->
+<div id="editTitleModal" class="modal">
+    <div class="modal-content">
+        <h4>Edit Title</h4>
+        <div class="input-field col s12">
+            <i class="material-icons prefix">rate_review</i>
+            <input id="titleToEdit" type="text" class="validate">
+            <label for="titleToEdit">Title</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#" id="updateTaskTitle" class="waves-effect waves-green btn blue">Save</a>
+    </div>
+</div>
