@@ -22,7 +22,7 @@ body {
   .tasks-container #add-task-btn {
     position: absolute;
     top: -1.9em;
-    right: 1.5em; }
+    right: 2.8em; }
 
 #tasks-list .task-row:not(:last-child) {
   border-bottom: solid 1px #eeeeee; }

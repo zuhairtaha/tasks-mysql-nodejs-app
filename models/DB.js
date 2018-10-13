@@ -11,7 +11,7 @@ const onlineDB = {
     password: '6d5f3bfa',
     database: 'heroku_37b75dd635d896f'
 }
-const db = mysql.createConnection(localDB)
+const db = mysql.createConnection(onlineDB)
 
 // connect
 db.connect(error => {

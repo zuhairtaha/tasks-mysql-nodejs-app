@@ -12898,7 +12898,7 @@ function addNewTask(event) {
     if (!status_id) throw new Error('Status is required');
     var due_date = new Date("".concat(date, " ").concat(time));
     if (due_date.toString() === 'Invalid Date') throw new Error('Invalid date');
-    due_date = due_date.toLocaleString();
+    due_date = due_date.toISOString();
     var taskObj = {
       title: title,
       description: description,
@@ -12998,7 +12998,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8155" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11761" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

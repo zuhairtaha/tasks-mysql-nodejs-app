@@ -34,9 +34,8 @@ function addNewTask(event) {
         if (due_date.toString() === 'Invalid Date')
             throw  new Error('Invalid date')
 
-        due_date = due_date.toLocaleString()
+        due_date = due_date.toISOString()
         const taskObj = {title, description, due_date, user_id, status_id}
-
         fetch('/task/api/add-task', {
             method: 'POST',
             headers: {
