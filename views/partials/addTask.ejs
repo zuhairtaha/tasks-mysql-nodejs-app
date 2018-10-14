@@ -35,7 +35,7 @@
                     </div>
 
                     <!--user-->
-                    <div class="input-field col s6">
+                    <div id="usersDropDown" class="input-field col s6">
                         <i class="material-icons prefix">perm_identity</i>
                         <select id="user">
                             <option value="" disabled selected>Choose user</option>
@@ -43,7 +43,7 @@
                             <option value="<%= u.id %>"><%= u.name %></option>
                             <% }) %>
                         </select>
-                        <label>User</label>
+                        <label for="user">User</label>
                     </div>
 
                     <!--status-->

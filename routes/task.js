@@ -16,5 +16,6 @@ router
     .get('/api/tasks-status-users', TaskController.tasksWithStatusAndUsers)
     .post('/api/add-task', TaskController.addNewTask)
     .patch('/api/:id', TaskController.updateTask)
+    .delete('/api/:id', TaskController.deleteTask)
 
 module.exports = router

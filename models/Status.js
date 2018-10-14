@@ -24,6 +24,7 @@ class Status extends DB {
         ORDER BY tasks_count ${orderBy}
         `)
     }
+
 }
 
 module.exports = {StatusModel: Status}

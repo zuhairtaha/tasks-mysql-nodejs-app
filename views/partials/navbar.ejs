@@ -11,8 +11,10 @@
             <i class="material-icons large">library_books</i> TASKS
         </a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="/">Week 1 Homework</a></li>
-            <li><a href="/w2">Week 2 Homework</a></li>
+            <% const cls1 = (title === 'MySQL - Week 1') ? 'active' : '' %>
+            <% const cls2 = (title === 'MySQL - Week 2') ? 'active' : '' %>
+            <li class="<%= cls1 %>"><a href="/">Week 1 Homework</a></li>
+            <li class="<%= cls2 %>"><a href="/w2">Week 2 Homework</a></li>
             <!-- Dropdown Trigger -->
             <li>
                 <a class="dropdown-trigger" href="#!" data-target="dropdown1">

@@ -70,6 +70,12 @@ class Task {
             .catch(err => res.status(500).send(err))
     }
 
+    static deleteTask(req, res) {
+        task.destroy(req.params.id)
+            .then(result => res.send(result))
+            .catch(err => res.status(500).send(err))
+    }
+
 }
 
 module.exports = {TaskController: Task}

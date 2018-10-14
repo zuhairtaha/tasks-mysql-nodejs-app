@@ -2,6 +2,7 @@ import M from "materialize-css"
 import {deleteTask} from "./deleteTask"
 import {editTitle} from "./editTitle"
 import {editDueDate} from "./editDueDate"
+import {deleteUser} from "./deleteUser"
 
 function getStatus(statusText) {
     let status
@@ -26,7 +27,8 @@ function renderResults(obj) {
         <div class="row task-row" id="task-row-${task.id}">
             <div class="col s1 card-content">
                 <label>
-                    <input ${getStatus(task.status)} type="checkbox"/>
+                    <input  data-action="change-status" data-taskid="${task.id}" 
+                        ${getStatus(task.status)} type="checkbox"/>
                     <span></span>
                 </label>
             </div>
@@ -54,19 +56,23 @@ function renderResults(obj) {
                   <ul style="min-width:200px" id='dropdown-${task.id}' 
                       class='dropdown-content'>
                     <li>
-                        <a href="#!" class="controlBtn" data-action="edit_title" data-user_id="${task.user_id}" data-taskid="${task.id}">
+                        <a href="#!" class="controlBtn" data-action="edit_title" data-user_id="${task.user_id}" 
+                            data-taskid="${task.id}">
                             <i class="material-icons">rate_review</i> Edit title</a>
                     </li>
                     <li>
-                        <a href="#!" class="controlBtn" data-action="edit_due_date" data-user_id="${task.user_id}" data-taskid="${task.id}">
+                        <a href="#!" class="controlBtn" data-action="edit_due_date" data-user_id="${task.user_id}" 
+                            data-taskid="${task.id}">
                             <i class="material-icons">edit</i> Edit due date</a>
                     </li>
                     <li>
-                        <a href="#!" class="controlBtn" data-action="delete_task" data-user_id="${task.user_id}" data-taskid="${task.id}">
+                        <a href="#!" class="controlBtn" data-action="delete_task" data-user_id="${task.user_id}" 
+                            data-taskid="${task.id}">
                             <i class="material-icons">delete_sweep</i> Delete task</a>
                     </li>
                     <li>
-                        <a href="#!" class="controlBtn" data-action="delete_user" data-user_id="${task.user_id}" data-taskid="${task.id}">
+                        <a href="#!" class="controlBtn" data-action="delete_user" data-user_id="${task.user_id}" 
+                            data-username="${task.user}" data-taskid="${task.id}">
                             <i class="material-icons">pool</i> Delete user</a>
                     </li>
                   </ul>
@@ -88,32 +94,44 @@ export function RenderTasksList() {
             tasksListDom.innerHTML = renderResults(data)
             tasksListDom.querySelectorAll('.indeterminate-checkbox')
                 .forEach(checkbox => checkbox.indeterminate = true)
-            tasksListDom.querySelectorAll('.controlBtn')
+            tasksListDom.querySelectorAll('.controlBtn,input[type=checkbox]')
                 .forEach(controlBtnClick)
             M.AutoInit()
         }).catch(err => console.log(err))
-
 }
 
-if (tasksListDom) {
-    RenderTasksList()
-}
 
 function controlBtnClick(controlButton) {
     controlButton.addEventListener("click", function (e) {
-        e.preventDefault()
+
         const taskId = this.dataset.taskid
         const action = this.dataset.action
         const userId = this.dataset.user_id
+        const userName = this.dataset.username
+
+        if (action !== 'change-status')
+            e.preventDefault()
 
         if (action === 'edit_title') editTitle(taskId)
         if (action === 'edit_due_date') editDueDate(taskId)
         if (action === 'delete_task') deleteTask(taskId)
-        if (action === 'delete_user') deleteUser(userId)
+        if (action === 'delete_user') deleteUser(userId, userName)
+        if (action === 'change-status') changeStatus(taskId, this.checked)
     })
 }
 
 
-
-
-
+function changeStatus(taskId, checked) {
+    let status_id = checked === true ? 3 : 1
+    fetch(`/task/api/${taskId}`, {
+        method: 'PATCH',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({status_id})
+    })
+        .then(data => data.json())
+        .then(results => console.log(results))
+        .catch(err => console.log(err))
+}

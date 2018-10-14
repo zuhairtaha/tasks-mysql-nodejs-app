@@ -10,6 +10,12 @@ class User {
             })
     }
 
+    static deleteUser(req, res) {
+        user.destroy(req.params.id)
+            .then(result => res.send(result))
+            .catch(err => res.status(500).send(err))
+    }
+
 }
 
 module.exports = {UserController: User}

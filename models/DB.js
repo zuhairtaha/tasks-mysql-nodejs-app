@@ -110,8 +110,14 @@ class DB {
 
     destroy(id) {
         // DELETE	/table/{id}	destroy	table.destroy
+        return new Promise((resolve, reject) => {
+            db.query('DELETE FROM?? WHERE id = ?', [this.table, id], (error, result) => {
+                if (error) reject(error)
+                resolve(result)
+            })
+        })
     }
 }
 
 // --------------------------
-module.exports = {DB,db}
+module.exports = {DB, db}

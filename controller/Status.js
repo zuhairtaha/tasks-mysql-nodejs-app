@@ -18,6 +18,7 @@ class Status {
             .then(data => res.send(data))
     }
 
+
 }
 
 module.exports = {StatusController: Status}

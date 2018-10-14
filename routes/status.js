@@ -7,5 +7,4 @@ router
     .get('/api/', StatusController.index)
     .get('/api/tasks-count',StatusController.nameTasksCount)
     .get('/api/tasks-count-desc',StatusController.nameTasksCountDesc)
-
 module.exports = router
