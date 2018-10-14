@@ -5,13 +5,11 @@ const localDB = {
     password: '',
     database: 'hyf-1'
 }
-const onlineDB = {
-    host: 'us-cdbr-iron-east-01.cleardb.net',
-    user: 'b42d09cef0af7d',
-    password: '4f939ce0',
-    database: 'heroku_b943da5b7a251d3'
-}
-const db = mysql.createConnection(localDB)
+let db
+if (process.env.JAWSDB_URL)
+    db = mysql.createConnection(process.env.JAWSDB_URL)
+else
+    db = mysql.createConnection(localDB)
 
 // connect
 db.connect(error => {
