@@ -25,4 +25,5 @@ Create an index on the name column of the student table.
 Add a new column to the class table named status which can only have the following values: not-started, ongoing, finished (hint: enumerations).
 
 ![uml](/public/images/uml.PNG)
+
 [DataBase.sql](/database_2.sql)
