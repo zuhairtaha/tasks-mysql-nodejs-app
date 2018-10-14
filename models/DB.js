@@ -7,11 +7,11 @@ const localDB = {
 }
 const onlineDB = {
     host: 'us-cdbr-iron-east-01.cleardb.net',
-    user: 'bb4df4b37199a0',
-    password: '6d5f3bfa',
-    database: 'heroku_37b75dd635d896f'
+    user: 'b42d09cef0af7d',
+    password: '4f939ce0',
+    database: 'heroku_b943da5b7a251d3'
 }
-const db = mysql.createConnection(onlineDB)
+const db = mysql.createConnection(localDB)
 
 // connect
 db.connect(error => {
@@ -117,6 +117,8 @@ class DB {
             })
         })
     }
+
+
 }
 
 // --------------------------
