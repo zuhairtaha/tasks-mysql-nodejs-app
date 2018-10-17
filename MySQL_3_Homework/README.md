@@ -1,3 +1,4 @@
+# MySQL week 3 Homework
 
 ## Homework Question
 
@@ -9,8 +10,12 @@ Next, using the entity relationship diagram as a starting point, write all the n
 
 Submit an image or PDF of your entity relationship diagram, and a `.sql` file with the `CREATE TABLE` statements.
 
+## SQL File
+
 [sql file](hyfblog 20181017 1812.sql)
+
+## UML Diagram
 
 [Open UML image <full size>](UML.png)
 
-![img1](UML.png)
+![img1](https://zuhairtaha.github.io/tasks-mysql-nodejs-app/MySQL_3_Homework/UML.png)
