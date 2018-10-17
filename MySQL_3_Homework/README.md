@@ -9,6 +9,6 @@ Next, using the entity relationship diagram as a starting point, write all the n
 
 Submit an image or PDF of your entity relationship diagram, and a `.sql` file with the `CREATE TABLE` statements.
 
-[sql file](/hyfblog 20181017 1812.sql)
+[sql file](hyfblog 20181017 1812.sql)
 
-![img1](/UML.png)
+![img1](UML.png)
