@@ -11,4 +11,6 @@ Submit an image or PDF of your entity relationship diagram, and a `.sql` file wi
 
 [sql file](hyfblog 20181017 1812.sql)
 
+[Open UML image <full size>](UML.png)
+
 ![img1](UML.png)
