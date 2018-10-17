@@ -23,7 +23,7 @@ This is a blog diagram, for CMS "Content Management System".
 
 ## ERD Diagram
 
-[Open ERD image](https://zuhairtaha.github.io/tasks-mysql-nodejs-app/MySQL_3_Homework/UML.png)
+[Open: full size](https://zuhairtaha.github.io/tasks-mysql-nodejs-app/MySQL_3_Homework/UML.png)
 
 ![img1](UML.png)
 
@@ -33,8 +33,12 @@ This is a blog diagram, for CMS "Content Management System".
 
 ### dbForge Studio for MySQL diagram
 
+[Open: full size](https://zuhairtaha.github.io/tasks-mysql-nodejs-app/MySQL_3_Homework/UML2.png)
+
 ![img2](UML2.png)
 
 ### SQLyog diagram
+
+[Open: full size](https://zuhairtaha.github.io/tasks-mysql-nodejs-app/MySQL_3_Homework/UML3.png)
 
 ![img3](UML3.png)
